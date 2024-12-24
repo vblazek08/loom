@@ -1,0 +1,48 @@
+---
+interface Props {
+  color?: string;
+  className?: string;
+  size?:
+    | "sm"
+    | "md"
+    | "lg"
+    | "xl"
+    | "2xl"
+    | "3xl"
+    | "4xl"
+    | "5xl"
+    | "6xl"
+    | "7xl";
+  weight?: "normal" | "bold" | "semibold" | "extrabold";
+}
+
+const sizeClasses = {
+  sm: "text-sm",
+  md: "text-base",
+  lg: "text-lg",
+  xl: "text-xl",
+  "2xl": "text-2xl",
+  "3xl": "text-3xl",
+  "4xl": "text-4xl",
+  "5xl": "text-5xl",
+  "6xl": "text-6xl",
+  "7xl": "text-7xl",
+};
+const weightClasses = {
+  normal: "font-normal",
+  bold: "font-bold",
+  semibold: "font-semibold",
+  extrabold: "font-extrabold",
+};
+
+const {
+  size = "md",
+  weight = "bold",
+  color = "text-black",
+  className,
+} = Astro.props;
+---
+
+<h3 class:list={[sizeClasses[size], weightClasses[weight], color, className]}>
+  <slot />
+</h3>

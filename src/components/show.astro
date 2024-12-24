@@ -1,0 +1,398 @@
+---
+import Button from "./button.astro";
+import Card from "./card.astro";
+import Container from "./container.astro";
+import H3 from "./h3.astro";
+import { Check } from "lucide-astro";
+import Slot from "./slot.astro";
+import { Image } from "astro:assets";
+import Pes from "/Users/vaclavblazek/Desktop/složka1/loom/src/src/pexels-ganinph-7564115.jpg";
+---
+
+<Container>
+  <div class="my-16 flex w-full flex-col items-center">
+    <H3 size="2xl">The easiest screen recorder you’ll ever use</H3>
+    <p>Record in a few clicks. Share anywhere. Collaborate better.</p>
+  </div>
+  <Container>
+    <div class="rounded-3xl bg-indigo-300/30 px-8 py-12 lg:px-32 lg:py-64">
+      <div class="flex justify-center gap-5">
+        <div
+          class="mt-1 size-3 shrink-0 animate-pulse rounded-full bg-red-600 ring-[10px] ring-red-300"
+        >
+        </div>
+        <div class="grid max-w-[40rem] gap-4 md:md:grid-cols-2">
+          <div class="">
+            <H3 size="2xl" color="text-indigo-950"
+              >Lightning fast screen recording</H3
+            >
+            <p class="mt-4 text-lg font-light text-indigo-800">
+              Easily record your screen and camera. Record on any device using
+              Loom’s Chrome extension, desktop app or mobile app.
+            </p>
+            <div class="mt-4">
+              <Button>Download now</Button>
+            </div>
+          </div>
+          <div class="md:display-block hiden h-full bg-red-500">
+            <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Container>
+
+<Container>
+  <div class="my-16 flex w-full flex-col items-center">
+    <h3>The easiest screen recorder you’ll ever use</h3>
+    <p>Record in a few clicks. Share anywhere. Collaborate better.</p>
+  </div>
+  <Container>
+    <div
+      class="mx-20 rounded-3xl bg-indigo-300/30 px-8 py-12 lg:px-32 lg:py-48"
+    >
+      <div class="flex gap-5"></div>
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="">
+          <H3 size="2xl" color="text-indigo-950"
+            >Lightning fast screen recording</H3
+          >
+          <p class="mt-4 text-lg font-light text-indigo-800">
+            Easily record your screen and camera. Record on any device using
+            Loom’s Chrome extension, desktop app or mobile app.
+          </p>
+          <div class="mt-4">
+            <Button variant="white">Download now</Button>
+          </div>
+        </div>
+        <div class="display-none md:block md:h-full md:bg-red-500">
+          <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+        </div>
+      </div>
+    </div>
+  </Container>
+</Container>
+
+<Container>
+  <div class="my-16 flex w-full flex-col items-center"></div>
+  <Container>
+    <div
+      class="mx-6 rounded-3xl bg-indigo-300/30 p-12 px-8 py-12 lg:mx-20 lg:px-32 lg:py-48"
+    >
+      <div class="flex gap-5"></div>
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="h-full bg-red-500">
+          <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+        </div>
+        <div class="">
+          <H3 size="2xl" color="text-indigo-950"
+            >Lightning fast screen recording</H3
+          >
+          <p class="mt-4 text-lg font-light text-indigo-800">
+            Easily record your screen and camera. Record on any device using
+            Loom’s Chrome extension, desktop app or mobile app.
+          </p>
+          <div class="mt-4">
+            <Button variant="white">Download now</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Container>
+
+<Container>
+  <div class="my-16 flex w-full flex-col items-center"></div>
+  <Container>
+    <div
+      class="mx-6 rounded-3xl bg-indigo-300/30 px-8 py-12 lg:mx-20 lg:px-32 lg:py-48"
+    >
+      <div class="flex gap-5">
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="">
+            <H3 size="2xl" color="text-indigo-950"
+              >Lightning fast screen recording</H3
+            >
+            <p class="mt-4 text-lg font-light text-indigo-800">
+              Easily record your screen and camera. Record on any device using
+              Loom’s Chrome extension, desktop app or mobile app.
+            </p>
+            <div class="mt-4">
+              <Button variant="white">Download now</Button>
+            </div>
+          </div>
+          <div class="display-none md:block md:h-full md:bg-red-500">
+            <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Container>
+<Container>
+  <div class="my-16 flex w-full flex-col items-center"></div>
+  <Container>
+    <div
+      class="llg:px-32 mx-6 rounded-3xl bg-indigo-300/30 px-8 py-12 lg:mx-20 lg:py-48"
+    >
+      <div class="flex gap-5"></div>
+      <div class="grid- grid gap-4 md:grid-cols-2">
+        <div class="display-none md:block md:h-full md:bg-red-500">
+          <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+        </div>
+        <div class="">
+          <H3 size="2xl" color="text-indigo-950"
+            >Lightning fast screen recording</H3
+          >
+          <p class="mt-4 text-lg font-light text-indigo-800">
+            Easily record your screen and camera. Record on any device using
+            Loom’s Chrome extension, desktop app or mobile app.
+          </p>
+          <div class="mt-4">
+            <Button variant="white">Download now</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Container>
+<Container>
+  <div class="my-16 flex w-full flex-col items-center"></div>
+  <Container>
+    <div
+      class="mx-6 rounded-3xl bg-indigo-300/30 px-8 py-12 text-center lg:mx-20 lg:px-32 lg:py-48"
+    >
+      <div class="flex flex-col items-center">
+        <H3 size="2xl" color="text-indigo-950"
+          >Lightning fast screen recording</H3
+        >
+        <p class="mt-4 text-lg font-light text-indigo-800">
+          Easily record your screen and camera. Record on any device using
+          Loom’s Chrome extension, desktop app or mobile app.
+        </p>
+        <div class="mt-4">
+          <Button variant="white">Download now</Button>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Container>
+<Container>
+  <div class="my-16 flex w-full flex-col items-center">
+    <H3 size="3xl" weight="extrabold"
+      >The easiest screen recorder you’ll ever use</H3
+    >
+  </div>
+</Container>
+<Container>
+  <div class=":gap-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <Card variant="green">
+      <div class="grid grid-rows-2 gap-8">
+        <div class="aspect-square w-full overflow-hidden bg-red-600">
+          <Image
+            src={Pes}
+            height={1040}
+            width={1300}
+            alt={"pes"}
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div>
+          <H3 color="text-green-900" size="2xl"> Sales </H3>
+          <p class="max-w-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            laboriosam consectetur similique eveniet aliquid harum.
+          </p>
+        </div>
+      </div>
+    </Card>
+    <Card variant="pink">
+      <div class="grid grid-rows-2 gap-8">
+        <div class="h-auto bg-red-600">
+          <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+        </div>
+        <div>
+          <H3 color="text-pink-900" size="2xl"> Sales </H3>
+          <p class="max-w-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            laboriosam consectetur similique eveniet aliquid harum.
+          </p>
+        </div>
+      </div>
+    </Card>
+    <Card variant="blue">
+      <div class="grid grid-rows-2 gap-8">
+        <div class="h-auto bg-red-600">
+          <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+        </div>
+        <div>
+          <H3 color="text-blue-900" size="2xl"> Sales </H3>
+          <p class="max-w-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            laboriosam consectetur similique eveniet aliquid harum.
+          </p>
+        </div>
+      </div>
+    </Card>
+    <Card>
+      <div class="grid grid-rows-2 gap-8">
+        <div class="h-auto bg-red-600">
+          <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+        </div>
+        <div>
+          <H3 color="text-purple-900" size="2xl"> Sales </H3>
+          <p class="max-w-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            laboriosam consectetur similique eveniet aliquid harum.
+          </p>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <div class="my-10 flex w-full justify-center">
+    <Button variant="gray">See all use cases</Button>
+  </div>
+</Container>
+<Container>
+  <div class="flex flex-col flex-nowrap items-center">
+    <H3 size="3xl">Lorem ipsum dolor sit amet.</H3>
+    <div class="mt-8 grid gap-x-8 gap-y-4 text-xl lg:grid-cols-2">
+      <ul>
+        <li class="flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+        <li class="mt-4 flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+        <li class="mt-4 flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+        <li class="mt-4 flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+      </ul>
+      <ul>
+        <li class="flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+        <li class="mt-4 flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+        <li class="mt-4 flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+        <li class="mt-4 flex justify-center">
+          <span
+            class="flex aspect-square items-center justify-center rounded-full bg-blue-100 p-1"
+          >
+            <Check class="text-blue-500" />
+          </span>
+          Screen and camera recording
+        </li>
+      </ul>
+    </div>
+    <Button className="my-16">See all features</Button>
+  </div>
+  <Slot
+    className="flex flex-col items-center rounded-3xl bg-indigo-950 p-16 text-white"
+    variant="fullw"
+  >
+    <H3 size="md" color="white">FROM OUR VLOG</H3>
+    <H3 size="2xl" color="white">Lorem ipsum dolor sit amet.</H3>
+    <div class="my-16 grid gap-16 lg:grid-cols-2 lg:gap-36">
+      <Slot className="max-w-96 rounded-3xl bg-indigo-800 p-8">
+        <H3 color="white"
+          >Lorem ipsum dolor sit amet consectetur adipisicing.</H3
+        >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsum
+          voluptatem assumenda repellat quam similique facere eos minima
+          temporibus ex reprehenderit repellendus saepe adipisci blanditiis
+          ratione possimus optio, numquam placeat deleniti ducimus, quod
+          debitis?
+        </p>
+        <Button className="mt-8">Read this article</Button>
+      </Slot>
+
+      <Slot className="max-w-96 rounded-3xl bg-indigo-800 p-8">
+        <H3 color="white"
+          >Lorem ipsum dolor sit amet consectetur adipisicing.</H3
+        >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsum
+          voluptatem assumenda repellat quam similique facere eos minima
+          temporibus ex reprehenderit repellendus saepe adipisci blanditiis
+          ratione possimus optio, numquam placeat deleniti ducimus, quod
+          debitis?
+        </p>
+        <Button className="mt-8">Read this article</Button>
+      </Slot>
+    </div>
+    <Button>Explore our blog</Button>
+  </Slot>
+  <Slot
+    className="felx my-32 items-center justify-center gap-4 rounded-3xl bg-black p-16 text-center text-white"
+  >
+    <H3 color="white" size="3xl">Loom for Enterprise</H3>
+    <p class="mx-auto mb-16 mt-6 max-w-80">
+      Loom for Enterprise helps teams securely manage and organize async video
+      communication at scale
+    </p>
+    <Button variant="white">lorem ipsum</Button>
+
+    <div class="relative p-4">
+      <div
+        class="absolute inset-0 animate-gradientRotate opacity-70 blur-3xl"
+        style="
+          background-image: radial-gradient(circle, 
+            rgba(59, 130, 246, 0.7) 0%, 
+            rgba(236, 72, 153, 0.7) 25%, 
+            rgba(251, 191, 36, 0.7) 50%, 
+            rgba(16, 185, 129, 0.7) 75%, 
+            rgba(59, 130, 246, 0.7) 100%);
+          background-size: 400% 400%;
+        "
+      >
+      </div>
+      <div>
+        <img src="/src/src/enterprise.webp" alt="" class="relative z-10" />
+      </div>
+    </div>
+  </Slot>
+</Container>

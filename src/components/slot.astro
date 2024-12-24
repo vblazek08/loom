@@ -1,0 +1,16 @@
+---
+interface Props {
+  className?: string;
+  variant?: "fullw" | "csw";
+}
+
+const variantClasses = {
+  fullw: "w-full rounded-3xl p-16",
+  csw: "rounded-3xl p-16 bg-red-500",
+};
+const { className, variant = "fullw" } = Astro.props;
+---
+
+<div class:list={[" ", variantClasses[variant], className]}>
+  <slot />
+</div>

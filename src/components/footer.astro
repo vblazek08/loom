@@ -1,0 +1,75 @@
+---
+import Button from "./button.astro";
+import Container from "./container.astro";
+import H3 from "./h3.astro";
+import Slot from "./slot.astro";
+---
+
+<Container>
+  <div
+    class="flex translate-y-20 flex-col rounded-3xl bg-white shadow-2xl shadow-gray-500"
+  >
+    <Slot
+      ><H3>lorem ipsum</H3><Button>get loom for free</Button><p>
+        for mac, windows,ios and android
+      </p></Slot
+    >
+  </div>
+</Container>
+<div class="w-full bg-violet-300 pt-40">
+  <Container>
+    <div
+      class="mt-16 grid w-full grid-cols-2 gap-x-8 lg:grid-cols-4 xl:grid-cols-6"
+    >
+      <div class="flex flex-col justify-center gap-4 gap-y-4">
+        <H3>lorem ipsum</H3>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <H3>lorem ipsum</H3>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <H3>lorem ipsum</H3>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <H3>lorem ipsum</H3>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <H3>lorem ipsum</H3>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <H3>lorem ipsum</H3>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+      </div>
+    </div>
+  </Container>
+</div>
+
+<div class="mt-12 text-gray-600">
+  <p></p>
+  <p>loom Tearms & Policies</p>
+  <p>your Privacy Choices</p>
+  <p>@ 2024,Loom,Inc. All Rights Reserved.</p>
+</div>

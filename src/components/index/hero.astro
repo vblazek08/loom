@@ -1,0 +1,45 @@
+---
+import Button from "../button.astro";
+import Container from "../container.astro";
+import { Download } from "lucide-astro";
+---
+
+<div class="bg-violet-200">
+  <Container>
+    <div
+      class="mb-20 mt-20 flex flex-col py-12 sm:items-start sm:text-left md:items-center md:text-center"
+    >
+      <div
+        class="mb-4 max-w-screen-lg font-medium text-indigo-950 sm:text-3xl md:text-4xl"
+      >
+        <h1>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+          ratione.
+        </h1>
+      </div>
+      <div class="max-w-screen-md text-indigo-900">
+        <p class="md:text-md sm:text-md">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, quia
+          earum est non necessitatibus veniam possimus dolor minima odit amet
+          laboriosam quis libero quaerat fuga tempore iure, tenetur cum impedit.
+        </p>
+      </div>
+      <div class="mt-8 flex justify-center gap-8">
+        <Button>Get loom for free</Button>
+        <Button variant="white"><Download />download loom</Button>
+      </div>
+      <div class="mt-8 bg-black">
+        <iframe
+          width="100%"
+          src="https://www.youtube.com/embed/VfgDCcvLiSA?si=JWcvVdVk5F-97NPB"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </Container>
+</div>

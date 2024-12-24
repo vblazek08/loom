@@ -1,0 +1,24 @@
+---
+import Button from "../button.astro";
+import Container from "../container.astro";
+---
+
+<Container>
+  <div class="grid gap-12 rounded-3xl bg-indigo-950 px-16 py-28 md:grid-cols-2">
+    <div class="hidden h-full min-h-32 rounded-md bg-gray-400 sm:block"></div>
+    <div class="">
+      <h3 class="text-zinc-400">New!</h3>
+      <h1 class="text-xl font-semibold text-zinc-50">
+        You record it, Loom AI writes it for you
+      </h1>
+      <div class="mt-4">
+        <p class="text-zinc-400">
+          Write a document, create an issue, or send a message with new AI
+          workflows. Your video is instantly transformed into text, so you can
+          complete important tasks faster than ever.
+        </p>
+      </div>
+      <div class="mt-4"><Button>Try loom AI</Button></div>
+    </div>
+  </div>
+</Container>

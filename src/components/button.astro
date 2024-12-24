@@ -1,0 +1,37 @@
+---
+interface Props {
+  href?: string;
+  variant?: "purple" | "white" | "gray";
+  size?: "sm" | "md" | "lg" | "xl";
+  className?: string;
+}
+
+const variantClasses = {
+  purple:
+    "bg-indigo-500 hover:shadow-2xl hover:shadow-purple-900 text-white hover:scale-105 ease-in-out duration-300 rounded-full border-4 border-indigo-300 ",
+  white:
+    "bg-white hover:shadow-2xl hover:shadow-white text-indigo-500 hover:scale-105 ease-in-out duration-300 rounded-full",
+  gray: "bg-indigo-500/10 hover:shadow-2xl hover:shadow-white  text-indigo-500 hover:scale-105 ease-in-out duration-300 rounded-full ",
+};
+
+const sizeClasses = {
+  sm: "py-2 px-3 text-sm",
+  md: "py-2.5 px-4 text-base",
+  lg: "py-4 px-6 text-lg",
+  xl: "py-5 px-8 text-xl",
+};
+
+const { href, variant = "purple", size = "md", className } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "inline-flex items-center justify-center",
+    variantClasses[variant],
+    sizeClasses[size],
+    className,
+  ]}
+>
+  <slot />
+</a>
