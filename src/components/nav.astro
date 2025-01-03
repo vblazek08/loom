@@ -1,13 +1,16 @@
 ---
+import { Menu } from "lucide-astro";
 import Button from "./button.astro";
 import Container from "./container.astro";
+import H3 from "./h3.astro";
 ---
 
-<div class="fixed left-0 right-0 top-0 z-40 w-full bg-white py-4">
+<Container />
+<nav class="fixed left-0 right-0 top-0 z-40 w-full bg-white py-4">
   <Container className="flex w-full items-center justify-between gap-5">
     <a href=""
       ><svg
-        width="150"
+        width="100"
         viewBox="0 0 135 44"
         fill="none"
         class="h-full"
@@ -66,9 +69,20 @@ import Container from "./container.astro";
         <a href="">lorem</a>
       </li>
     </ul>
-    <div class="flex gap-5">
-      <Button>Get loom For Free</Button>
-      <Button variant="gray">Contact Sales</Button>
+    <div class="hidden gap-5 sm:flex">
+      <Button
+        ><H3 size="sm" className="text-white" weight="normal">
+          Get loom For Free
+        </H3>
+      </Button>
+      <Button variant="gray">
+        <H3 size="sm" className="text-indigo-400" weight="normal">
+          Contact Sales
+        </H3>
+      </Button>
+    </div>
+    <div class="flex sm:hidden">
+      <Button><Menu /></Button>
     </div>
   </Container>
-</div>
+</nav>

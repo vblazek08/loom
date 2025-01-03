@@ -1,15 +1,18 @@
 ---
+import Container from "./container.astro";
 import H3 from "./h3.astro";
 import Slot from "./slot.astro";
 ---
 
-<div class="w-full">
+<div
+  class="ml-auto mr-auto w-full max-w-7xl px-4 sm:ml-0 sm:mr-0 sm:max-w-full sm:px-0"
+>
   <ul
-    class="flex min-w-96 snap-x snap-center flex-row flex-nowrap gap-8 overflow-x-auto"
+    class="flex snap-x snap-center flex-col flex-nowrap gap-8 overflow-x-auto sm:flex-row"
   >
     <li class="snap-center">
-      <Slot variant="csw" className="bg-red-300/20 px-24 md:px-48">
-        <H3 className="min-w-96"
+      <Slot variant="csw" className="bg-red-300/20 sm:px-24 md:px-48">
+        <H3 className="sm:min-w-96"
           >‘Loom has been the light of my life since you showed me it.’ – I
           never tire of hearing this from folks. Not even an investor... yet.</H3
         >
@@ -20,8 +23,8 @@ import Slot from "./slot.astro";
       </Slot>
     </li>
     <li class="snap-center">
-      <Slot variant="csw" className="bg-sky-200 px-24 md:px-48">
-        <H3 className="min-w-96"
+      <Slot variant="csw" className="bg-sky-200 sm:px-24 md:px-48">
+        <H3 className="sm:min-w-96"
           >‘Loom has been the light of my life since you showed me it.’ – I
           never tire of hearing this from folks. Not even an investor... yet.</H3
         >
@@ -32,8 +35,8 @@ import Slot from "./slot.astro";
       </Slot>
     </li>
     <li class="snap-center">
-      <Slot variant="csw" className="bg-red-600/20 px-24 md:px-48">
-        <H3 className="min-w-96"
+      <Slot variant="csw" className="bg-red-600/20 sm:px-24 md:px-48">
+        <H3 className="sm:min-w-96"
           >‘Loom has been the light of my life since you showed me it.’ – I
           never tire of hearing this from folks. Not even an investor... yet.</H3
         >
@@ -44,8 +47,8 @@ import Slot from "./slot.astro";
       </Slot>
     </li>
     <li class="snap-center">
-      <Slot variant="csw" className="bg-violet-200 px-24 md:px-48">
-        <H3 className="min-w-96"
+      <Slot variant="csw" className="bg-violet-200 sm:px-24 md:px-48">
+        <H3 className="sm:min-w-96"
           >‘Loom has been the light of my life since you showed me it.’ – I
           never tire of hearing this from folks. Not even an investor... yet.</H3
         >
@@ -56,8 +59,8 @@ import Slot from "./slot.astro";
       </Slot>
     </li>
     <li class="snap-center">
-      <Slot variant="csw" className="bg-red-600/20 px-24 md:px-48">
-        <H3 className="min-w-96"
+      <Slot variant="csw" className="bg-red-600/20 sm:px-24 md:px-48">
+        <H3 className="sm:min-w-96"
           >‘Loom has been the light of my life since you showed me it.’ – I
           never tire of hearing this from folks. Not even an investor... yet.</H3
         >
