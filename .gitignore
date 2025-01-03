@@ -44,9 +44,6 @@ dist/
 postcss.config.cjs
 tailwind.config.mjs
 
-# VS Code settings
-.vscode/
-
 # macOS files
 .DS_Store
 
