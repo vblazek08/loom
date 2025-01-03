@@ -1,13 +1,17 @@
 ---
 import Button from "../button.astro";
 import Container from "../container.astro";
+import { Image } from "astro:assets";
+import Pes from "../../src/pexels-ganinph-7564115.jpg";
 ---
 
 <Container>
   <div
     class="grid gap-12 rounded-3xl bg-indigo-950 px-4 py-14 sm:px-16 sm:py-28 md:grid-cols-2"
   >
-    <div class="hidden h-full min-h-32 rounded-md bg-gray-400 sm:block"></div>
+    <div class="hidden h-full min-h-32 rounded-md bg-gray-400 sm:block">
+      <Image src={Pes} height={1040} width={1300} alt={"pes"} />
+    </div>
     <div class="">
       <h3 class="text-zinc-400">New!</h3>
       <h1 class="text-xl font-semibold text-zinc-50">
